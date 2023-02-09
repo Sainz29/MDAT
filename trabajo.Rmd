@@ -1,0 +1,156 @@
+---
+title: "Trabajo"
+author: "Miguel Sainz, Javier Sempere, Daniel Munell"
+date: "8/2/2023"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+rm(list = ls())
+setwd("D:/Usuarios/Sainz/Documentos/Universidad/cuarto/Segundo cuatri/MDAT/TRABAJO")
+datos = read.csv(file = "Fuel_Consumption_2000-2022.csv", dec = ".", sep = ",")
+```
+
+```{r 1}
+datos_comp = datos[complete.cases(datos),]
+attach(datos)
+```
+
+```{r 2}
+boxplot(ENGINE.SIZE)
+stripchart(ENGINE.SIZE)
+boxplot.stats(ENGINE.SIZE)$out #consideramos 1.5IQR
+boxplot.stats(ENGINE.SIZE)$out #consideramos 2IQR
+boxplot.stats(ENGINE.SIZE, coef = 3)$out #consideramos 3
+```
+
+```{r 3}
+boxplot(FUEL.CONSUMPTION)
+stripchart(FUEL.CONSUMPTION)
+boxplot.stats(FUEL.CONSUMPTION)$out #consideramos 1.5IQR
+boxplot.stats(FUEL.CONSUMPTION)$out #consideramos 2IQR
+boxplot.stats(FUEL.CONSUMPTION, coef = 3)$out #consideramos 3
+```
+
+```{r 4}
+boxplot(HWY..L.100.km.)
+stripchart(HWY..L.100.km.)
+boxplot.stats(HWY..L.100.km.)$out #consideramos 1.5IQR
+boxplot.stats(HWY..L.100.km.)$out #consideramos 2IQR
+boxplot.stats(HWY..L.100.km., coef = 3)$out #consideramos 3
+
+```
+
+```{r 5}
+boxplot(COMB..L.100.km.)
+stripchart(COMB..L.100.km.)
+boxplot.stats(COMB..L.100.km.)$out #consideramos 1.5IQR
+boxplot.stats(COMB..L.100.km.)$out #consideramos 2IQR
+boxplot.stats(COMB..L.100.km., coef = 3)$out #consideramos 3
+```
+
+```{r 6}
+boxplot(COMB..mpg.)
+stripchart(COMB..mpg.)
+boxplot.stats(COMB..mpg.)$out #consideramos 1.5IQR
+boxplot.stats(COMB..mpg.)$out #consideramos 2IQR
+boxplot.stats(COMB..mpg., coef = 3)$out #consideramos 3
+```
+
+```{r 7}
+boxplot(EMISSIONS)
+stripchart(EMISSIONS)
+boxplot.stats(EMISSIONS)$out #consideramos 1.5IQR
+boxplot.stats(EMISSIONS)$out #consideramos 2IQR
+boxplot.stats(EMISSIONS, coef = 3)$out #consideramos 3
+```
+
+```{r 8}
+
+```
+
+```{r 9}
+
+```
+
+```{r 10}
+
+```
+
+```{r 11}
+
+```
+
+```{r 12}
+
+```
+
+```{r 13}
+
+```
+
+```{r 14}
+
+```
+
+```{r 15}
+
+```
+
+```{r 16}
+
+```
+
+```{r 17}
+
+```
+
+```{r 18}
+
+```
+
+```{r 19}
+
+```
+
+```{r 20}
+
+```
+
+```{r 21}
+
+```
+
+```{r 22}
+
+```
+
+```{r 23}
+
+```
+
+```{r 24}
+
+```
+
+```{r 25}
+
+```
+
+```{r 26}
+
+```
+
+```{r 27}
+
+```
+
+```{r 28}
+
+```
+
+```{r 29}
+
+```
+
